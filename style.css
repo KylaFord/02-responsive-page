@@ -25,6 +25,8 @@ h1 {
 }
 
 main {
+  max-width: 960px;
+  margin: 0 auto;
   padding: 16px;
 }
 
@@ -120,6 +122,37 @@ a:hover {
 }
 
 .article img {
+  max-width: 100%;
+  height: auto;
+  display: block;
   margin-bottom: 20px;
   border-radius: 5px;
+}
+
+p {
+  margin: 0 0 16px;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  #featured-article h2 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+
+  #featured-article {
+    padding: 24px;
+  }
 }
